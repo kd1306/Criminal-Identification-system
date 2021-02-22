@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RECOGNIZE</title>
+	<style>
+	body{background-color: lightblue;
+		background-image: url('2.jfif');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+  		}
+		h1{color: red;
+		   text-align: center;
+		   font-family: Times New Roman;
+		   font-size: 500%;
+		   text-shadow: 1px 1px 1px #222;
+		}
+		h2{color: blue;
+		   font-family: Times New Roman;
+		   font-size: 250%;
+		   text-shadow: 1px 1px 1px #222;}
+		input[type="submit"]{text-align: center;font-size: 200%; height: 2em;width: 15em;background: lightblue;margin: 0 30%;}
+		input[type="file"]{text-align: center;font-size: 120%; height: 1.5em;width: 20em;background: lightblue;}
+		
+		label{display: inline-block;width: 240px;color: white;font-size: 200%; text-shadow: 1px 1px 1px #222;}
+		footer{font-size: 70%;color: white}	
+
+	</style>
+</head>
+<body>
+<h1>CRIMINAL RECOGNITION</h1>
+<h2>Upload the criminal's photo below</h2>
+<form enctype="multipart/form-data" action="Tester.py" method="post">
+        <label for="Criminal Photo">Criminal Photo:</label>
+  		<input type="file" name="Photo" value="Photo"required><br><br>
+		<input type="submit" value="UPLOAD"><br><br>
+</form>		
+</body>
+</html>

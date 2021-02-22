@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset=UTF-8>
+<head>
+	<title>REGISTER</title>
+	<style>
+	body{background-color: lightblue;
+		background-image: url('1.jfif');
+  		background-repeat: no-repeat;
+  		background-attachment: fixed;
+  		background-size: cover;
+  		}
+		h1{color: red;
+		   text-align: center;
+		   font-family: Times New Roman;
+		   font-size: 500%;
+		   text-shadow: 1px 1px 1px #222;
+		}
+		h2{color: blue;
+		   font-family: Times New Roman;
+		   font-size: 300%;
+		   text-shadow: 1px 1px 1px #222;}
+		input[type="submit"]{text-align: center;font-size: 200%; height: 2em;width: 15em;background: lightblue;margin: 0 30%;}
+		input[type="file"]{text-align: center;font-size: 120%; height: 1.5em;width: 20em;background: lightblue;}
+		input[type="number"]{ font-size: 120%; height: 1.5em;width: 20em;}
+		input[type="text"]{ font-size: 120%; height: 1.5em;width: 20em;}
+		input[type="reset"]{text-align: center;font-size: 200%; height: 2em;width: 10em;background: lightblue;margin: 0 30%;}
+		label{display: inline-block;width: 240px; color: white;font-size: 200%; text-shadow: 1px 1px 1px #222;}
+		footer{font-size: 70%;color: white}	
+
+	</style>
+</head>
+<body>
+<h1>CRIMINAL REGISTRATION</h1>
+<h2>Criminal Profile</h2>
+<form enctype="multipart/form-data" action="Registration.py" method="post">
+		<label for="name">Name:</label>
+  		<input type="text"  name="name" placeholder="Enter the name" required autofocus><br><br>
+  		<label for="age">Age:</label>
+  		<input type="number"  name="age" placeholder="Enter the age" required><br><br>
+		<label for="Dob">Date of Birth:</label>
+  		<input type="text"  name="Dob" placeholder="Enter Date of Birth" required><br><br>
+  		<label for="Crime_Commited">Crime Commited:</label>
+		<input type="text" name="Crime_Commited"style="width:500px; height:70px;" placeholder="Enter the Crime Commited" required><br><br>
+  		<label for="punishment_duration">Punishment Duration:</label>
+  		<input type="number"  name="punishment_duration" placeholder="Enter punishment duration(in yrs)" required><br><br>
+  		<label for="Criminal_Photo">Criminal Photo:</label>
+  		<input type="file"  name="Photo" required><br><br>
+		<input type="submit" name="REGISTER" value="REGISTER"><br><br>
+		<input type="reset">
+	</form>
+	<footer><p>Made By: Kushang Darbar & Hardik Thakkar</p></footer>
+</body>
+</html>
